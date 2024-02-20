@@ -1,0 +1,156 @@
+header {
+  background-image: url('../img/header.png');
+  background-size: cover;
+  background-position: center;
+  padding: 45px 0;
+  @media (min-width: 1024px) {
+    box-shadow: 0 4px 16px 0 rgb(75 0 129 / 5%);
+  }
+}
+
+#logo {
+  cursor: pointer;
+}
+
+#mobile-nav {
+  width: 100%;
+  text-align: center;
+  @media (min-width: 1024px) {
+    width: auto;
+  }
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  @media (min-width: 1024px) {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.menu-item {
+  padding: 20px;
+  @media (min-width: 1024px) {
+    padding: inherit;
+  }
+  &:hover {
+    background-color: $orange;
+    @media (min-width: 1024px) {
+      background: none;
+    }
+  }
+  .active {
+    a {
+      @media (min-width: 1024px) {
+        color: $orange;
+      }
+    }
+  }
+  a {
+    color: $black;
+    text-decoration: none;
+    margin: 0 20px;
+    &:hover {
+      color: $white;
+      @media (min-width: 1024px) {
+        color: $orange;
+      }
+    }
+  }
+}
+
+#close-menu {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .download-buttons {
+    order: 3;
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    @media (min-width: 1024px) {
+      order: 3;
+      align-self: flex-end;
+      position: absolute;
+      bottom: 50px;
+    }
+    button {
+      @media (min-width: 1024px) {
+        background-color: $black;
+      }
+    }
+  }
+}
+
+.text-content {
+  order: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  @media (min-width: 1024px) {
+    order: 1;
+    flex: 1;
+    align-items: flex-start;
+    padding-right: 20px;
+  }
+}
+
+.image-content {
+  order: 2;
+  padding: 20px 0;
+  @media (min-width: 1024px) {
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.text-content-title {
+  margin: 10px 0;
+  @media (min-width: 1024px) {
+    font-size: 50px;
+  }
+}
+
+.text-content-paragraph {
+  margin: 10px 0;
+}
+
+.text-content-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.smart-btn {
+    background-color: $orange;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
